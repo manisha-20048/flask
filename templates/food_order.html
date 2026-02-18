@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stall</title>
+    <link rel="stylesheet" href="/static/Add_food_order.css"/>
+</head>
+<body>
+    <section class="back">
+    <form class="form" method="POST">
+        <center><h1 class="heading">Food order details</h1></center>
+        <label>customer Name</label>
+        <input type="text" name="name" placeholder="Name" required/>
+        <label>Phno:-</label>
+        <input type="number" name="phno" placeholder="phno" required/>
+        <label>Food item name</label>
+        <select name="item" required>
+        <option value="">-- Select Food Item --</option>
+        <option value="Biryani">Biryani - ₹250</option>
+        <option value="Vada Pav">Vada Pav - ₹100</option>
+        <option value="Butter Chicken">Butter Chicken - ₹200</option>
+        <option value="Idli">Idli - ₹50</option>
+        <option value="Dal Makhani">Dal Makhani - ₹20</option>
+        <option value="Lassi">Lassi - ₹50</option>
+        <option value="Chicken Friedrice">Chicken Friedrice - ₹100</option>
+        </select>
+
+        <label>quantity</label>
+        <input type="text" name="quantity" placeholder="1plate,2plates etc" required/>
+        <button>Submit</button>
+    </form>
+    </section>
+    
+</body>
+</html>

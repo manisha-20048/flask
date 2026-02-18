@@ -1,0 +1,114 @@
+
+.form button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.form button:active {
+    transform: scale(0.97);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+.back {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.92);
+    width: 380px;
+    padding: 28px 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+}
+
+
+.form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 6px rgba(255, 107, 107, 0.4);
+}
+
+.form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: linear-gradient(135deg, #ff4757, #e84118);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 450px) {
+    .form {
+        width: 90%;
+    }
+}

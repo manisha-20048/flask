@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food stall</title>
+    <link rel="stylesheet" href="/static/update_order_info.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🛒 Payment Order Info</h2>
+      <form method="POST">
+        <label>Enter Customer Name:</label>
+        <input type="text" name="customer_name" required>
+        <button type="submit">Search</button>
+    </form>
+    <p class="user">Logged in as: <b>{{ username }}</b></p>
+
+    {% if order %}
+    <div class="card">
+        <p><span>📞 Phone:</span> {{ order.phno }}</p>
+        <p><span>🍽 Items:</span></p>
+        <ul>
+            {% for item in order.Item %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+        <p><span>💰 Total Price:</span> ₹{{ order.total_price }}</p>
+        <p><span>📅 Date:</span> {{ order.date }}</p>
+        <p><span>⏰ Time:</span> {{ order.time }}</p>
+        <p><span>📦 Order Status:</span> {{ order.order_status }}</p>
+        <p><span>💳 Payment Status:</span> {{ order.pay_information }}</p>
+    </div>
+
+    {% else %}
+        <p class="no-order">No order found.</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

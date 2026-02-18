@@ -1,0 +1,126 @@
+/* .back{
+     background-image: url(https://as1.ftcdn.net/jpg/18/71/49/50/1000_F_1871495066_2lJUTxoq4Dk81AUePYl67MYKagShwwNf.jpg);
+    height: 100vh;
+    padding-top:20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    margin-left: 30%;
+    width:30%;
+    row-gap:20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+    align-content: center;
+    margin-top:15%;
+}
+.form input{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: cadetblue;
+}
+.form h2{
+    text-align: center;
+}
+.form button{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: orangered;
+    font-size: 20px;
+}
+.form label{
+    font-size: 20px;
+}
+.form button:active{
+    color: antiquewhite;
+    background-color: blue;
+} */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user {
+    text-decoration: underline;
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin: 6px 0;
+    color: #444;
+}
+
+.card span {
+    font-weight: bold;
+    color: #333;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin: 4px 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a67d8;
+}
+
+.no-order {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stall</title>
+    <link rel="stylesheet" href="/static/delete_order.css">
+</head>
+<body>
+    <section class="back">
+        <form class="form" method="POST">
+            <h2>Delete Order</h2>
+            {% if message %}
+               <p class="message">{{ message }}</p>
+            {% endif %}
+
+            <label>Customer Name</label>
+            <input type="text" name="customer_name" placeholder="Enter customer name" required>
+
+            <button class="btn-delete">Delete Order</button>
+        </form>
+    </section>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Stall</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <section class="nav">
+        <div class="navone">
+        <span style="color: white; border: 1px solid blue;border-radius: 10px; background-color: blue;">{{username}}</span>
+        <nav><a href="{{url_for('food_order')}}"><i class="bi bi-cart-plus"></i> Food Order</a></nav>
+       <!-- <nav><a href="{{url_for('view_orders')}}"><i class="bi bi-eye"></i> View Orders </a></nav>-->
+        <nav><a href="{{url_for('update_order_info')}}"><i class="bi bi-pencil-square"></i> payment Order info </a></nav>
+        <nav><a href="{{url_for('delete_order')}}"><i class="bi bi-x-circle"></i> Delete Order</a></nav>
+        </div>
+        <div class="navtwo">
+        <nav><a href="{{url_for('logout')}}"><i class="bi bi-box-arrow-right"></i> Logout</a></nav>
+        <nav><a href="{{url_for('delete_account')}}">  <i class="bi bi-trash-fill"></i> Delete Account</a></nav>
+        </div>
+    </section>
+    <section class="image">
+       
+            <div class="logo-section" style="text-align:center; padding:15px; background-color:#f8f9fa;">
+    <img 
+        src="https://logo-suggestion.renderforest.com/suggestions-images/acae/38e6/acae38e68fec402294571898055e5d95.png" 
+        alt="Food Stall Logo"
+        style="height:80px;"
+    >
+            </div>
+ <div>
+            <p>
+This is a Food Order Management System that allows users to view food items, place orders, track their orders, and manage their account easily.<br>
+👤 User Information
+Displays Username
+Shows logged-in user details
+Helps identify the current customer<br>
+🖼️ Food Items Section
+Includes different food categories (meals, rice items, snacks, etc.)
+Users can visually select food items they like<br>
+🛒 Order Features
+Food Order
+Users can place new food orders<br>
+View Orders
+Users can see all their previous and current orders
+Update Order Info
+Here we are updataing about Payment and order status <br>
+Delete Order
+Users can cancel or remove an order<br>
+🔐 Account Actions
+Logout
+Securely exits the application
+Delete Account
+Permanently removes user account and data</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/922783734/photo/assorted-indian-recipes-food-various.jpg?s=612x612&w=0&k=20&c=p8DepvymWfC5j7c6En2UsQ6sUM794SQMwceeBW3yQ9M=" width="500vw" height="400vh">
+             <img src="https://www.bitesbee.com/wp-content/uploads/2025/05/Indian-Food-Item-Banner.jpg" width="500vw" height="400vh">
+            <img src="https://blog.swiggy.com/wp-content/uploads/2024/03/Biryani-2-1024x538.jpg" width="500vw" height="400vh"> 
+        </div>
+        
+              <div>
+        <img src="https://img.freepik.com/free-photo/top-view-fast-food-mix-mozzarella-sticks-club-sandwich-hamburger-mushroom-pizza-caesar-shrimp-salad-french-fries-ketchup-mayo-cheese-sauces-table_141793-3998.jpg?semt=ais_hybrid&w=740&q=80" width="500vm" height="400vh">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPdIxB34BuG6bZ4Lst_Cp1oTUlKq2p7BEtNg&s" width="500vm" height="400vh">
+        <img src="https://img.freepik.com/premium-photo/assortment-grilled-sausages-meat-vegetables-picnic-barbeque-concept_82893-17592.jpg?semt=ais_user_personalization&w=740&q=80" width="500vm" height="400vh">
+    </div>
+
+        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

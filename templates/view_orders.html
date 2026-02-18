@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stall</title>
+    <link rel="stylesheet" href="/static/view_orders.css"
+</head>
+<body>
+<center>
+<h2 style="background-color: rgba(88, 196, 250, 0.712);"> View Order Details</h2>
+<div class="view">
+<h2>Order List</h2>
+
+<!-- {% if order %}
+    <h4>Login Username:{{username}}</h4>
+
+    <p>Items:
+         
+        {% for item in order.Item %}
+            <li>{{ item }}</li>
+        {% endfor %}
+       
+    </p>
+    <p>Phno:{{order.phno}}</p>
+    <p>Order Status: {{ order.order_status }}</p>
+    <p>Date: {{ order.date }}</p>
+    <p>Time: {{ order.time }}</p>
+    <p>Total Price: ₹{{ order.total_price }}</p>
+{% else %}
+    <p>No orders found.</p>
+{% endif %} -->
+{% if orders %}
+    {% for customer, details in orders.items() %}
+        <h3>Customer: {{ customer }}</h3>
+        <p>Items: {{ details['Item'] }}</p>
+        <p>Payment:{{details['order_status']}}</p>
+        <p>order_status:{{details['pay_information']}}</p>
+        <p>Date:{{details['date']}}</p>
+        <p>time:{{details['time']}}</p>
+        <p>Total Price: {{ details.get('total_price', 'N/A') }}</p>
+        <p>Quantity:{{details['Quantity']}}</p>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>No orders available</p>
+{% endif %}
+
+</div>
+</center>
+</body>
+</html>

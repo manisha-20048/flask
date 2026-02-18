@@ -1,0 +1,9 @@
+.view{
+    background-image: url(https://c1.wallpaperflare.com/preview/967/303/707/vintage-boards-wood-the-background-texture.jpg);
+    height: 300vh;
+    /* padding-top:20px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}

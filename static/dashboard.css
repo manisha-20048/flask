@@ -1,0 +1,250 @@
+/* .nav{
+    display: flex;
+    flex-direction: row;
+    column-gap:70px;
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+    
+}
+.navone{
+    display: flex;
+    flex-direction: row;
+    column-gap:120px;
+    margin-left:10px;
+    color: aliceblue;
+   
+    
+}
+.navone a{
+    text-decoration: none;
+    border: 1px solid blue;
+    box-shadow: 1px 2px skyblue;
+    background-color: blue;
+    border-radius: 10px;
+    color: aliceblue;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    
+}
+.navtwo{
+    display: flex;
+    flex-direction: row;
+    column-gap:120px;
+    text-decoration: none;
+    justify-content:right;
+    margin-left:10px;
+   
+}
+.navtwo a{
+    text-decoration: none;
+    border: 1px solid blue;
+    box-shadow: 1px 2px skyblue;
+    background-color: blue;
+    border-radius: 10px;
+    color: aliceblue;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    
+}
+
+
+.image div{
+    display:flex;
+    flex-direction:row;
+}
+@media(max-width:576px){
+    .nav{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 30px;  
+}
+.navone{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px
+}
+.navtwo{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px;
+    margin-left: 0;
+}
+.image div{
+    display:flex;
+    flex-direction:column;
+}
+
+
+}
+
+@media(min-width:576px) and (max-width:768px){
+    .nav{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 30px;  
+}
+.navone{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px
+}
+.navtwo{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px;
+    margin-left: 0;
+}
+.image div{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+
+}
+@media(min-width:768px) and (max-width:992px){
+    .nav{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 30px;  
+}
+.navone{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px
+}
+.navtwo{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px;
+    margin-left: 0;
+}
+.image div{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+}
+@media(min-width:992px) and (max-width:1200px){
+    .nav{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 30px;  
+}
+.navone{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px
+}
+.navtwo{
+    display: flex;
+    flex-direction:column;
+    row-gap:30px;
+    margin-left: 0;
+}
+.image div{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+} */
+ /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar container */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1f2933, #111827);
+    padding: 14px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Left section */
+.navone,
+.navtwo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Username badge */
+.navone span {
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(37,99,235,0.8);
+}
+
+/* Links */
+.nav a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav a:hover {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 0 10px rgba(37,99,235,0.8);
+}
+
+/* Right side buttons */
+.navtwo a {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* Logout hover */
+.navtwo a:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 0 10px rgba(220,38,38,0.8);
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+}/* Icon spacing */
+.nav a i {
+    margin-right: 6px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Delete account danger style */
+.nav a.danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.nav a.danger:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 0 10px rgba(220,38,38,0.8);
+}
