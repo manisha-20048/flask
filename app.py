@@ -137,5 +137,6 @@ def delete_account():
             else:
                 return 'please login to delete account'
     return render_template('delete_account.html')    
-
-app.run(debug=True,use_reloader=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
